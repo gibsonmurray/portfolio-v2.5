@@ -6,14 +6,14 @@ function TechStackIcons() {
                         flex-wrap
                         xl:ml-20 xl:mb-4" 
         >
-            <Framework name="TypeScript" circular={true}/>
-            <Framework name="React" circular={true}/>
-            <Framework name="Node.js" circular={true}/>
-            <Framework name="Next.js" circular={true}/>
-            <Framework name="TailwindCSS" circular={true}/>
-            <Framework name="Swift" circular={true}/>
-            <Framework name="Java" circular={true}/>
-            <Framework name="C" circular={true}/>
+            <Framework name="TypeScript" />
+            <Framework name="React" />
+            <Framework name="Node.js" />
+            <Framework name="Next.js" />
+            <Framework name="TailwindCSS" />
+            <Framework name="Swift" />
+            <Framework name="Java" />
+            <Framework name="C" />
         </div>
     );
 }
