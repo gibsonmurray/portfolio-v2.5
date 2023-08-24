@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Lottie from "lottie-react";
 import abstractBubbles from "../../../assets/lottie/abstract-bubbles.json";
-import heroImg from "../../../assets/hero-img.jpg";
+import heroImg from "./../../../assets/hero-img.jpg";
 
 function HeroImg() {
     return (
