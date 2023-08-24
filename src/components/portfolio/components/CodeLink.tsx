@@ -3,6 +3,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { SizeProp } from "@fortawesome/fontawesome-svg-core";
+import useWindowDimensions from "@/hooks/useWindowDimension";
 
 type CodeLinkProps = {
     code: string;
@@ -10,8 +11,9 @@ type CodeLinkProps = {
 
 function CodeLink(props: CodeLinkProps) {
     let size: SizeProp | undefined = "xl";
+    const { width } = useWindowDimensions();
 
-    if (window.innerWidth > 900) {
+    if (width! > 900) {
         size = "2x";
     }
 

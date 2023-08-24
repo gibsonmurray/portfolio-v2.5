@@ -1,18 +1,12 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react";
+import useWindowDimensions from "@/hooks/useWindowDimension";
 import HeroContent from "./components/HeroContent";
 import HeroImg from "./components/HeroImg";
 import TechStack from "./components/TechStack";
 
 function Hero() {
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-    useEffect(() => {
-        const handleResize = () => setWindowWidth(window.innerWidth);
-        window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
+    const { width } = useWindowDimensions();
 
     return (
         <section
@@ -26,7 +20,7 @@ function Hero() {
                                     flex-col mt-[80px] 
                                     lg:flex-row lg:mt-0"
                 >
-                    {windowWidth < 1024 ? (
+                    {width! < 1024 ? (
                         <>
                             <HeroImg />
                             <HeroContent />

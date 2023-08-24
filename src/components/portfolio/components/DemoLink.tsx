@@ -3,6 +3,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { SizeProp } from "@fortawesome/fontawesome-svg-core";
+import useWindowDimensions from "@/hooks/useWindowDimension";
 
 type DemoLinkProps = {
     demo: string;
@@ -10,8 +11,9 @@ type DemoLinkProps = {
 
 function DemoLink(props: DemoLinkProps) {
     let size: SizeProp | undefined = "lg";
+    const { width } = useWindowDimensions();
 
-    if (window.innerWidth > 900) {
+    if (width! > 900) {
         size = "xl";
     }
 

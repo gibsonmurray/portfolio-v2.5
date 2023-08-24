@@ -10,7 +10,7 @@ function Contact() {
             id="Contact"
             className="flex flex-col items-center justify-center overflow-hidden py-28 lg:flex-row bg-white"
         >
-            <div className="flex h-4/5 w-1/4 xl:h-1/3 items-center justify-center overflow-hidden">
+            <div className="flex h-4/5 w-3/5 lg:w-1/4 xl:h-1/3 items-center justify-center overflow-hidden">
                 <div className="w-fill h-fill">
                     <Lottie
                         animationData={emailAnimation}

@@ -1,20 +1,14 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import useWindowDimensions from "@/hooks/useWindowDimension";
+import { useState } from "react";
 import NavLinks from "./components/NavLinks";
 import FullscreenMenu from "./components/FullscreenMenu";
 import HamburgerIcon from "./components/HamburgerIcon";
 
 function Navbar() {
-
+    const { width } = useWindowDimensions();
     const [isOpen, setIsOpen] = useState(false);
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-    useEffect(() => {
-        const handleResize = () => setWindowWidth(window.innerWidth);
-        window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
 
     const links: LinkName[] = [
         { name: "Home" },
@@ -35,12 +29,12 @@ function Navbar() {
             >
                 Gibson Murray
             </a>
-            {windowWidth < 900 ? (
+            {width! < 900 ? (
                 <HamburgerIcon isOpen={isOpen} setIsOpen={setIsOpen} />
             ) : (
                 <NavLinks />
             )}
-            {windowWidth < 900 && (
+            {width! < 900 && (
                 <FullscreenMenu
                     isOpen={isOpen}
                     setIsOpen={setIsOpen}
@@ -52,7 +46,7 @@ function Navbar() {
 }
 
 export type LinkName = {
-    name: string
-}
+    name: string;
+};
 
 export default Navbar;

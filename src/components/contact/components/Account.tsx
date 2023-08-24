@@ -2,11 +2,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { SizeProp } from "@fortawesome/fontawesome-svg-core";
+import useWindowDimensions from "@/hooks/useWindowDimension";
 
 type AccountProps = {
-    platform: string
-    caption: string
-}
+    platform: string;
+    caption: string;
+};
 
 function Account(props: AccountProps) {
     let icon,
@@ -23,8 +24,9 @@ function Account(props: AccountProps) {
         title = "Email";
         link = "mailto:gibmurrays@gmail.com";
     }
+    const { width } = useWindowDimensions();
 
-    if (window.innerWidth < 900) {
+    if (width! < 900) {
         size = "2x";
     }
 
