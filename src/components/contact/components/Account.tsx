@@ -1,12 +1,18 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { SizeProp } from "@fortawesome/fontawesome-svg-core";
 
-function Account(props) {
+type AccountProps = {
+    platform: string
+    caption: string
+}
+
+function Account(props: AccountProps) {
     let icon,
         title,
         link,
-        size = "3x";
+        size: SizeProp | undefined = "3x";
 
     if (props.platform === "linkedin") {
         icon = faLinkedin;
