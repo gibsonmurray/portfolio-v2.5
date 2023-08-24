@@ -18,7 +18,7 @@ function HeroContent() {
                             lg:text-left lg:w-[26rem]
                             xl:w-auto"
             >
-                Hi I'm Gibson! A driven and passionate Full-Stack Developer based
+                Hi I&apos;m Gibson! A driven and passionate Full-Stack Developer based
                 in College Park, MD 📍
             </p>
             <Socials />

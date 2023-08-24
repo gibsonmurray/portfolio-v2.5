@@ -19,7 +19,11 @@ import express from "../assets/icons/express.svg";
 import haskell from "../assets/icons/haskell.svg";
 import dataStructure from "../assets/icons/data-structure.svg";
 
-function Framework({ name }) {
+type FrameworkProps = {
+    name: string;
+}
+
+function Framework({ name }: FrameworkProps) {
     let icon;
 
     if (name === "HTML") {

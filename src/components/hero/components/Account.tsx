@@ -1,7 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-function Account(props) {
+type AccountProps = {
+    platform: string;
+}
+
+function Account(props: AccountProps) {
 
     let icon, title, link;
 

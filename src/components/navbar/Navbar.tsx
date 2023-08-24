@@ -16,7 +16,7 @@ function Navbar() {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-    const links = [
+    const links: LinkName[] = [
         { name: "Home" },
         { name: "About" },
         { name: "Projects" },
@@ -49,6 +49,10 @@ function Navbar() {
             )}
         </div>
     );
+}
+
+export type LinkName = {
+    name: string
 }
 
 export default Navbar;

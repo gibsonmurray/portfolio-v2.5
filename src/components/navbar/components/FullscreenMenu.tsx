@@ -1,7 +1,14 @@
-import { useEffect } from "react";
+import { Dispatch, SetStateAction, useEffect } from "react";
 import NavLink from "./NavLink";
+import { LinkName } from "../Navbar";
 
-const FullscreenMenu = ({ isOpen, setIsOpen, links }) => {
+type FullscreenMenuProps = {
+    isOpen: boolean;
+    setIsOpen: Dispatch<SetStateAction<boolean>>;
+    links: LinkName[]
+}
+
+const FullscreenMenu = ({ isOpen, setIsOpen, links }: FullscreenMenuProps) => {
     useEffect(() => {
         if (isOpen) {
             document.body.style.position = 'fixed';
@@ -21,7 +28,7 @@ const FullscreenMenu = ({ isOpen, setIsOpen, links }) => {
                     key={index}
                     name={link.name}
                     vertical={true}
-                    onClick={() => setIsOpen(false)}
+                    setIsOpen={setIsOpen}
                 />
             ))}
         </div>

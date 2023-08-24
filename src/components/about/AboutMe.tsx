@@ -7,13 +7,13 @@ function AboutMe() {
                 MD📍
             </h3>
             <p className="mt-5 text-xl text-neutral-500">
-                Welcome to my corner of the web! I'm a{" "}
+                Welcome to my corner of the web! I am a{" "}
                 <strong>Computer Science Student @ UMD</strong> with expertise
                 in languages and frameworks including{" "}
                 <strong>
                     TypeScript, React, Tailwind CSS, Next.js, Java, and Swift
                 </strong>
-                . Throughout my career, I've leveraged these skills to develop
+                . Throughout my career, I have leveraged these skills to develop
                 compelling, intuitive, and efficient software solutions, always
                 focusing on writing clean, efficient code, and building{" "}
                 <strong>user interfaces</strong>.

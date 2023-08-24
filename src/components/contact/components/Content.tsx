@@ -7,7 +7,7 @@ function Content() {
                 CONTACT
             </h2>
             <h3 className="mt-5 text-center text-3xl font-extrabold lg:text-start">
-                Let's connect! I'm currently available for hire! 💡
+                Let&apos;s connect! I am currently available for hire! 💡
             </h3>
             <Accounts />
         </div>

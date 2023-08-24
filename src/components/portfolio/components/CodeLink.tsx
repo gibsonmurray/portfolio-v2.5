@@ -1,14 +1,18 @@
-"use client"
+"use client";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { SizeProp } from "@fortawesome/fontawesome-svg-core";
 
-function CodeLink(props) {
+type CodeLinkProps = {
+    code: string;
+};
 
-    let size = "xl";
+function CodeLink(props: CodeLinkProps) {
+    let size: SizeProp | undefined = "xl";
 
     if (window.innerWidth > 900) {
-        size = "2x"
+        size = "2x";
     }
 
     return (

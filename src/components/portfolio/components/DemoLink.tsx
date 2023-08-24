@@ -1,11 +1,15 @@
-"use client"
+"use client";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { SizeProp } from "@fortawesome/fontawesome-svg-core";
 
-function DemoLink(props) {
+type DemoLinkProps = {
+    demo: string;
+};
 
-    let size = "lg";
+function DemoLink(props: DemoLinkProps) {
+    let size: SizeProp | undefined = "lg";
 
     if (window.innerWidth > 900) {
         size = "xl";

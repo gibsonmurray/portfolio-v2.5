@@ -9,7 +9,7 @@ export default function Home() {
 
     return (
         <div className="h-screen w-screen text-neutral-800">
-            <Navbar/>
+            <Navbar />
             <Hero />
             <About />
             <Portfolio />
