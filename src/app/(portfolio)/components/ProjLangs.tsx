@@ -1,4 +1,4 @@
-import Framework from "../../Framework";
+import Framework from "../../(components)/Framework";
 
 type ProjLangsProps = {
     langs: string[];

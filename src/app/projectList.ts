@@ -1,8 +1,8 @@
-import geolocatorImg from "../../assets/lottie/geolocator.json";
-import codepenImg from "../../assets/lottie/codepen.json";
-import aiImg from "../../assets/lottie/ai.json";
-import devSetupImg from "../../assets/lottie/dev-setup.json";
-import listenerImg from "../../assets/lottie/listener.json";
+import geolocatorImg from "../assets/lottie/geolocator.json";
+import codepenImg from "../assets/lottie/codepen.json";
+import aiImg from "../assets/lottie/ai.json";
+import devSetupImg from "../assets/lottie/dev-setup.json";
+import listenerImg from "../assets/lottie/listener.json";
 
 const projects = [
     {

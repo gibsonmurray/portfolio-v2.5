@@ -1,4 +1,4 @@
-import projectList from "./projectList";
+import projectList from "../projectList";
 import Project from "./Project";
 
 function Projects() {
