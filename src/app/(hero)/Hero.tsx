@@ -16,7 +16,7 @@ function Hero() {
         >
             <div className="flex h-4/5 w-11/12 flex-col items-center justify-center">
                 <div
-                    className="flex items-center justify-center 
+                    className="flex items-center justify-between xl:justify-center
                                     flex-col mt-[80px] 
                                     lg:flex-row lg:mt-0"
                 >
